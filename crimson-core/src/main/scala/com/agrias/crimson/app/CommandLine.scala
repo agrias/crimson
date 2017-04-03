@@ -7,7 +7,7 @@ case class Config(mode: String = "")
 /**
   * Created by Andrew Gao on 4/3/17.
   */
-object Crimson extends App{
+object CommandLine extends App{
   val parser = new scopt.OptionParser[Config]("crimson") {
     head("crimson", "0.1")
 
@@ -24,4 +24,5 @@ object Crimson extends App{
           BaseFunctions.HelloWorld()
       }
   }
+
 }
